@@ -1,0 +1,37 @@
+.rom-bitcoin {
+    background: transparent url("chrome-extension://__MSG_@@extension_id__/img/bitcoin.png") no-repeat;
+}
+
+.rom-ethereum {
+    background: transparent url("chrome-extension://__MSG_@@extension_id__/img/ethereum.png") no-repeat;
+}
+
+.rom-ripple {
+    background: transparent url("chrome-extension://__MSG_@@extension_id__/img/ripple.png") no-repeat;
+}
+
+.rom-bitcoin_cash {
+    background: transparent url("chrome-extension://__MSG_@@extension_id__/img/bitcoin_cash.png") no-repeat;
+}
+
+.rom-litecoin {
+    background: transparent url("chrome-extension://__MSG_@@extension_id__/img/litecoin.png") no-repeat;
+}
+
+.rom-dollars {
+    background: transparent url("chrome-extension://__MSG_@@extension_id__/img/dollars.png") no-repeat;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.rain--item {
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    top: -200px;
+    z-index: 9999999999999999;
+}
