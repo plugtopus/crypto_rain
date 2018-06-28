@@ -1,8 +1,4 @@
-function stopAll() {
-    chrome.tabs.executeScript({
-        file: '/core/stopall.js'
-    });
-}
+
 document.getElementById('bitcoin').addEventListener('click', () => {
     chrome.tabs.executeScript({
     file: '/core/bitcoin.js'

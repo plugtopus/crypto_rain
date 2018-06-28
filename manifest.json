@@ -1,6 +1,6 @@
 {
    "background": {
-      "scripts": [ "core/libs/jquery.min.js", "core/libs/cs.js", "core/bg.js" ]
+      "scripts": [ "core/libs/jquery-1.10.2.js", "core/cs.js", "core/bg.js" ]
    },
    "browser_action": {
       "default_icon": "img/19.png",
@@ -9,10 +9,9 @@
    "default_locale": "ru",
    "content_scripts": [ {
       "css": [ "css/style.css" ],
-      "js": [ "core/libs/jquery.min.js", "core/libs/cs.js" ],
+      "js": [ "core/libs/jquery-1.10.2.js", "core/cs.js" ],
       "matches": [ "\u003Call_urls>" ]
    } ],
-   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
    "icons": {
       "128": "img/128.png",
       "19": "img/19.png",
@@ -20,11 +19,10 @@
    },
    "manifest_version": 2,
    "name": "__MSG_name__",
+   "short_name": "__MSG_shortname__",
    "description": "__MSG_desc__",
-   "permissions": [ "tabs", "\u003Call_urls>", "activeTab", "tabs", "*://*/*", "cookies", "management", "storage", "notifications", "contextMenus", "webRequest", "webRequestBlocking" ],
+   "permissions": [ "tabs", "\u003Call_urls>", "activeTab", "\u003Call_urls>" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "2018.4.4.2",
-   "web_accessible_resources": [ "img/*", "core/*" ],
-   "author": "Plugtopus Agency",
-   "homepage_url": "https://plugtopus.agency"
+   "version": "2018.06.22.4",
+   "web_accessible_resources": [ "img/*", "core/*" ]
 }
